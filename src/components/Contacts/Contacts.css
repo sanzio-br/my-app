@@ -1,0 +1,62 @@
+:root{
+    --blue:#9702B1;
+    --darkblue:#9702D9;
+    --white:#E8F9C5;
+    --grey:rgb(87, 87, 87);
+    --shadow:0 7px 25px #4db5ff;
+}
+.contacts{
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    padding: 40px 30px;
+    background:#1f1f3b ;
+    gap: 3em;
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.location > p{
+    font-size: 1.5em;
+}
+.location > .C-card{
+    border: 1px solid var(--prim-blue);
+    border-radius: 1em;
+    padding: 2em;
+}
+.location > .C-card:hover{
+    box-shadow: var(--shadow);
+}
+.location > .C-card > h5{
+    font-size: 1em;
+}
+.location > .C-card > a:hover{
+    text-decoration: underline;
+}
+
+/* message area */
+input{
+    margin-bottom: 1em;
+}
+input,
+textarea{
+    width: 100%;
+    padding: .5em;
+    outline: none;
+    border-radius: 1em;
+}
+textarea{
+    resize: vertical;
+    height: 300px;
+}
+input[type="submit"]{
+    outline: none;
+    border: none;
+}
+input[type="submit"]:hover{
+    background-color: #437ca5;
+}

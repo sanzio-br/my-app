@@ -1,0 +1,37 @@
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+#home > h4{
+    font-size: 1.em;
+}
+#home > h3{
+    font-size: 1.4em;
+}
+#home > h1{
+    font-size: 1.7em;
+}
+#home > img{
+    margin: 2em auto;
+    width: 15em;
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+#home > .socials{
+    position: absolute;
+    left: 0;
+    bottom: 10em;
+    transform: rotate(90deg);
+}
+#home > a{
+    position: absolute;
+    right: 5em;
+    bottom: 7em;
+    transform: rotate(90deg);
+}
+#home > .socials > a{
+    margin: .5em;
+}

@@ -1,0 +1,55 @@
+.cardSection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5em;
+    margin: 1.5em auto;
+}
+.cardSection > .card{
+    color: aliceblue;
+    height: 400px;
+    padding: auto 1em;
+    border-radius: 1.5em;
+    position: relative;
+    border: 1px solid var(--prim-blue);
+}
+.cardSection > .card:hover{
+    box-shadow: var(--shadow);
+    transform: translateY(1em);
+    border: none;
+}
+.cardSection > .card > h3{
+    color: #ffffff;
+    background-color: var(--prim-blue);
+    margin: auto auto 1em auto;
+    padding: 1em;
+    border-bottom-right-radius: 2em;
+}
+.cardSection > .card > .card-bottom{
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+    gap: 3em;
+}
+.cardSection > .card > .card-bottom > ul{
+    text-align: start;
+    margin-left: 1.5em;
+    line-height: 2em;
+}
+.cardSection > .card > .card-bottom  > ul > li {
+    color: var(--prim-blue);
+    font-size: 1.2em;
+}
+.cardSection > .card > .card-bottom  > p {
+    color: var(--prim-blue-var-light);
+    font-size: 1.2em;
+}
+.cardSection > .card > .card-bottom  > p >span{
+    font-size: 2em;
+    position: relative;
+}
+.cardSection > .card > .card-bottom  > p >span::before{
+    position: absolute;
+    content: '$';
+    top:0;
+    left:-.7em;
+    font-size: .6em;
+}

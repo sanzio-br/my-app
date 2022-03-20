@@ -1,0 +1,76 @@
+
+.top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.top .about-img img{
+    width: 15rem;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.paragraph p{
+    font-size: 1.2em;
+    text-align: left;
+}
+.paragraph a:hover{
+    background: var(--blue);
+}
+
+.about{
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+.top{
+    margin: 20px 20px 0 20px;
+}
+.spn{
+    text-align: center;
+    position: relative;
+}
+.top > .about-img > img{
+    border-radius: 50%;
+    width: 20em;
+    height: 20em;
+}
+.bottom{
+    display: flex;
+    margin-top: 2rem;
+    font-size: 2.5em;
+    width: 50%;
+    justify-content: space-between;
+    margin: 2em auto;
+    color: var(--prim-blue);
+}
+.bottom ion-ionic{
+    margin: auto 10px;
+}
+.paragraph p{
+    margin-bottom:20px ;
+    color: var(--prim-blue-var-light);
+}
+.skills > ul{
+    color: var(--prim-blue);
+    display: grid;
+    grid-template-columns: repeat(2,4fr);
+    text-align: start;
+    font-size: 1.2em;
+    margin: 2em auto;
+}
+
+
+.btns{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2em;
+}
+.button{
+    padding: .5em;
+    color: #ffffff;
+    background-color: var(--prim-blue);
+    border-radius: .4em;
+    font-size: 1.2em;
+}
+.button:hover{
+    background-color: var(--bg-color);
+}
