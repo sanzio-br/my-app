@@ -1,14 +1,18 @@
 
 .project-cards{
     display: grid;
-    grid-template-columns: repeat(4,2fr);
+    grid-template-columns: repeat(3, 1fr);
     gap:2em;
     padding: 2em;
+    overflow-x: auto;
 }
 .project{
     background: #2c2c6c;
     border-radius: 1em;
     padding: .7em;
+    width: 300px;
+    height: 400px;
+    position: relative;
 }
 .project > .img{
     height: 10em;
@@ -17,7 +21,34 @@
     width: 100%;
     height: 100%;
 }
+.project > h3{
+    color: var(--prim-blue);
+    margin: 1em auto;
+}
+.project > p{
+    color: #ffffff;
+}
 .buttons{
-    display: flex;
-    justify-content: space-between;
+    position: absolute;
+    bottom: 1.5em;
+}
+.buttons > a:nth-child(1){
+    border: 1px solid var(--prim-blue);
+    background:var(--blue);
+}
+.buttons > a:nth-child(1):hover{
+    background-color:var(--prim-blue);
+    border: none;
+}
+.buttons > a:nth-child(2):hover{
+    color:var(--prim-blue) ;
+    background: none;
+    border: 1px solid var(--prim-blue);
+}
+.buttons > a{
+    font-size: 1em;
+
+}
+.buttons > a:nth-child(1){
+    margin-right: 7.3em;
 }

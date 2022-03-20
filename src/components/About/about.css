@@ -74,3 +74,38 @@
 .button:hover{
     background-color: var(--bg-color);
 }
+@media only screen and (max-width: 800px){
+	/*Big smartphones [426px -> 600px]*/
+    #about{
+        display: flex;
+        flex-direction: column;
+    }
+    .top{
+        display: flex;
+    flex-direction: column;
+    }
+    .top > .about-img img{
+        width: 10rem;
+        height: 10rem;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .top > .about-img{
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .paragraph > p{
+        text-align: center;
+        font-size: 1.2em;
+    }
+    .skills > ul > li {
+        font-size: .9em;
+    }
+    .bottom > ion-ionic{
+        margin: auto 10px;
+    }
+    .btns{
+        font-size: .8em;
+    }
+    
+}

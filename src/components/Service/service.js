@@ -11,8 +11,8 @@ export default function Services(){
         },
         {
             id: nanoid(),
-            header:"Database Management",
-            lists:["Database Development.", "Database Maintainance.", "Database upgrade","Bulk SMS"],
+            header:"General Services",
+            lists:["Database Development.", "Database Maintainance.", "Database upgrade","Bulk SMS","M-pesa Intergration"],
             price:50
         },
         {
@@ -24,7 +24,9 @@ export default function Services(){
     ]
     return(
         <section id= "services">
-            <h1>Services</h1>
+        <div className="heading">
+          <h1 className="pageheading">services</h1>
+        </div>
             <div className="cardSection">
                 {
                     cards.map(({ id, header, lists, price }) => {
@@ -35,7 +37,7 @@ export default function Services(){
                                     <ul>
                                         {lists.map(item => {
                                             return (
-                                                <li><MdDone /> {item}</li>
+                                                <li key ={id}><MdDone /> {item}</li>
                                             )
                                         })}
                                     </ul>

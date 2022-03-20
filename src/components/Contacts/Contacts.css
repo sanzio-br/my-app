@@ -5,6 +5,9 @@
     --grey:rgb(87, 87, 87);
     --shadow:0 7px 25px #4db5ff;
 }
+.contact{
+    position: relative;
+}
 .contacts{
     color: #ffffff;
     display: grid;
@@ -47,11 +50,12 @@ textarea{
     width: 100%;
     padding: .5em;
     outline: none;
-    border-radius: 1em;
+    border-radius: .5em;
 }
 textarea{
     resize: vertical;
     height: 300px;
+    margin-bottom: 1.5em;
 }
 input[type="submit"]{
     outline: none;
@@ -59,4 +63,20 @@ input[type="submit"]{
 }
 input[type="submit"]:hover{
     background-color: #437ca5;
+}
+#myBtn2{
+    position: fixed;
+    font-size: 2.3em;
+    position: absolute;
+    right: 1em;
+    bottom: .2em;
+}
+@media only screen and (max-width: 800px){
+    .contacts{
+        display:flex;
+        flex-direction: column;
+    }
+    .location > p, .location > .C-card{
+        margin-bottom: 2em;
+    }
 }

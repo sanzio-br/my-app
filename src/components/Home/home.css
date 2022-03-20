@@ -27,10 +27,11 @@
     transform: rotate(90deg);
 }
 #home > a{
+    position: fixed;
+    font-size: 2.3em;
     position: absolute;
-    right: 5em;
-    bottom: 7em;
-    transform: rotate(90deg);
+    right: 1em;
+    bottom: 1.2em;
 }
 #home > .socials > a{
     margin: .5em;

@@ -2,20 +2,22 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5em;
-    margin: 1.5em auto;
+    margin: 2em;
+    overflow-x: auto;
 }
 .cardSection > .card{
     color: aliceblue;
     height: 400px;
+    min-width: 300px;
+    max-width: 400px;
     padding: auto 1em;
-    border-radius: 1.5em;
+    background-color: var(--blue);
+    border-bottom-right-radius: 1.5em;
+    border-bottom-left-radius: 1.5em;
     position: relative;
-    border: 1px solid var(--prim-blue);
 }
 .cardSection > .card:hover{
-    box-shadow: var(--shadow);
-    transform: translateY(1em);
-    border: none;
+    border: 1px solid var(--prim-blue);
 }
 .cardSection > .card > h3{
     color: #ffffff;

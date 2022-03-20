@@ -2,20 +2,25 @@ import About from './components/About/About'
 import Contacts from './components/Contacts/Contacts'
 import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
-import Navbar from './components/Navbar/Navbar'
 import Projects from './components/projects/Projects'
 import Services from './components/Service/service'
+import Hambuger from './components/Navbar/hambuger'
+import Nav from './components/Navbar/nav'
 import './index.css'
-export default function App(){
-    return(
+import { useMediaQuery } from 'react-responsive'
+export default function App() {
+    const isMobile = useMediaQuery({ query: '(max-width: 600px)' })
+    const isLaptop = useMediaQuery({ query: '(min-width: 800px)' })
+    return (
         <div>
-        <Home />
-        <Navbar />
-        <About />
-        <Projects />
-        <Services />
-        <Contacts />
-        <Footer />
+            {isMobile && <Hambuger />}
+            <Home />
+            {isLaptop && <Nav />}
+            <About />
+            <Projects />
+            <Services />
+            <Contacts />
+            <Footer />
         </div>
     )
 }

@@ -15,17 +15,12 @@ export default function Message() {
       });
       e.target.reset();
   };
-  function isValidEmail(email) {
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-  }
-
   return (
     <form ref={form} onSubmit={sendEmail}>
       <label>Name</label>
       <input type="text" name="user_name" />
       <label>Email</label>
-      <input type="email" onchange = {isValidEmail()} name="user_email" />
+      <input type="email" name="user_email" />
       <label>Message</label>
       <textarea name="message" />
       <input type="submit" value="Send" className="button" />
