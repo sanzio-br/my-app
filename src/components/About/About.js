@@ -1,3 +1,4 @@
+import React from 'react'
 import "./about.css"
 import Profile from '../../images/profile.png';
 import Resume from "./CURRICULUM VITAE.pdf";

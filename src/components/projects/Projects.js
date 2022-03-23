@@ -1,3 +1,4 @@
+import React from 'react'
 import './Projects.css'
 import Portfolio from './project images/portfolio.png'
 import Tenzies from './project images/tenzies.png'

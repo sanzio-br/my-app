@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './navbar.css';
 export default function Hambuger() {
     const [active, setActive] = useState(false)

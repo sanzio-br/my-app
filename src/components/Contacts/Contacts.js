@@ -1,3 +1,4 @@
+import React from 'react'
 import "./Contacts.css";
 import Email from './Message';
 import { HiLocationMarker } from "react-icons/hi";

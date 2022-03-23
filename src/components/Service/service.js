@@ -1,3 +1,4 @@
+import React from "react";
 import "./service.css";
 import {MdDone} from "react-icons/md";
 import {nanoid} from 'nanoid'

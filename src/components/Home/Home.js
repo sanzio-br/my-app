@@ -1,3 +1,4 @@
+import React from 'react'
 import './home.css';
 import Logo from '../../images/Santech.png'
 import {BsGithub}  from 'react-icons/bs';
@@ -11,7 +12,7 @@ export default function Home(){
             <h1>I am brian sanzio</h1>
             <h3>A frontend web developer</h3>
             <img src={Logo} alt="Profile" />
-            <a href = "#contacts" onclick="topFunction()" id="myBtn" title="Go to top"><BsFillArrowDownCircleFill /></a>
+            <a href = "#contacts" id="myBtn" title="Go to top"><BsFillArrowDownCircleFill /></a>
             <div className = "socials">
                 <a href='http://github.com' target="_blank" rel="noreferrer"><BsGithub/></a>
                 <a href='http://linkedin.com' target="_blank" rel="noreferrer"><BsLinkedin/></a>
