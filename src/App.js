@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import About from './components/About/About'
 import Contacts from './components/Contacts/Contacts'
 import Footer from './components/Footer/Footer'
@@ -26,7 +26,7 @@ export default function App() {
                     <Route path='/services' element={<Services />} />
                     <Route path='/contacts' element={<Contacts />} />
                 </Routes>
-                <Footer />
+            <Footer />
         </Router>
     )
 }

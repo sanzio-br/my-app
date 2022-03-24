@@ -32,7 +32,6 @@ export default function Contacts() {
           <Email />
         </div>
       </div>
-      <a href="#Home" id="myBtn2" title="Go to top"><BsFillArrowUpCircleFill /></a>
     </section>
   )
 }
