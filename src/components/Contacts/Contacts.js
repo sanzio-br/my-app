@@ -4,7 +4,6 @@ import Email from './Message';
 import { HiLocationMarker } from "react-icons/hi";
 import { MdEmail } from "react-icons/md";
 import { ImWhatsapp } from "react-icons/im";
-import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 export default function Contacts() {
   return (
     <section className="contact" id="contacts">

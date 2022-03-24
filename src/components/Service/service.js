@@ -7,19 +7,19 @@ export default function Services(){
         {
             id: nanoid(),
             header:"Web Development",
-            lists:["Website Design.", "Website Development.", "Website Hosting.", "Website Maintainance.", "Latency Reduction."],
+            lists:["Website Design", "Website Development", "Website Hosting", "Website Maintainance", "Latency Reduction"],
             price: 150
         },
         {
             id: nanoid(),
             header:"General Services",
-            lists:["Database Development.", "Database Maintainance.", "Database upgrade","Bulk SMS","M-pesa Intergration"],
+            lists:["Database Development", "Database Maintainance", "Database upgrade","Bulk SMS","M-pesa Intergration"],
             price:50
         },
         {
             id: nanoid(),
             header:"Data Entry",
-            lists:[" PDF to Word.","Web Search","Data Capturing from Websites","Mailing List Creation","Manually typing Data"],
+            lists:[" PDF to Word","Web Search","Data Capturing from Websites","Mailing List Creation","Manually typing Data"],
             price: "10/hr"
         },
     ]
@@ -38,7 +38,7 @@ export default function Services(){
                                     <ul>
                                         {lists.map(item => {
                                             return (
-                                                <li key ={id}><MdDone /> {item}</li>
+                                                <li key ={lists.length}><MdDone /> {item}.</li>
                                             )
                                         })}
                                     </ul>

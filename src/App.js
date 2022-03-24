@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import About from './components/About/About'
 import Contacts from './components/Contacts/Contacts'
 import Footer from './components/Footer/Footer'
@@ -17,7 +17,7 @@ export default function App() {
         <Router>
             {isMobile && <Hambuger />}
             <Routes>
-                <Route path='/' element={<Home />} />
+                <Route index exact path='/' element={<Home />} />
             </Routes>
                 {isLaptop && <Nav />}
                 <Routes>

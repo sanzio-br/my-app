@@ -4,7 +4,6 @@ import Logo from '../../images/Santech.png'
 import {BsGithub}  from 'react-icons/bs';
 import {BsLinkedin}  from 'react-icons/bs';
 import {BsTwitter}  from 'react-icons/bs';
-import {BsFillArrowDownCircleFill}  from 'react-icons/bs';
 export default function Home(){
     return(
         <section id = "home">
@@ -13,9 +12,9 @@ export default function Home(){
             <h3>A frontend web developer</h3>
             <img src={Logo} alt="Profile" />
             <div className = "socials">
-                <a href='http://github.com' target="_blank" rel="noreferrer"><BsGithub/></a>
-                <a href='http://linkedin.com' target="_blank" rel="noreferrer"><BsLinkedin/></a>
-                <a href='http://twitter.com' target="_blank" rel="noreferrer"><BsTwitter/></a>
+                <a href='http://github.com' target="_blank" rel="noopener noreferrer"><BsGithub/></a>
+                <a href='http://linkedin.com' target="_blank" rel="noopener noreferrer"><BsLinkedin/></a>
+                <a href='http://twitter.com' target="_blank" rel="noopener noreferrer"><BsTwitter/></a>
             </div>
         </section>
     )
