@@ -1,7 +1,6 @@
 import React from 'react'
 import About from './components/About/About'
 import Contacts from './components/Contacts/Contacts'
-import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
 import Projects from './components/projects/Projects'
 import Services from './components/Service/service'
@@ -26,7 +25,6 @@ export default function App() {
                     <Route path='/services' element={<Services />} />
                     <Route path='/contacts' element={<Contacts />} />
                 </Routes>
-            <Footer />
         </Router>
     )
 }

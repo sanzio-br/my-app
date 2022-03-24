@@ -5,19 +5,19 @@ import {nanoid} from 'nanoid'
 export default function Services(){
     const cards = [
         {
-            id: nanoid(),
+            id: 1,
             header:"Web Development",
             lists:["Website Design", "Website Development", "Website Hosting", "Website Maintainance", "Latency Reduction"],
             price: 150
         },
         {
-            id: nanoid(),
+            id: 2,
             header:"General Services",
             lists:["Database Development", "Database Maintainance", "Database upgrade","Bulk SMS","M-pesa Intergration"],
             price:50
         },
         {
-            id: nanoid(),
+            id: 3,
             header:"Data Entry",
             lists:[" PDF to Word","Web Search","Data Capturing from Websites","Mailing List Creation","Manually typing Data"],
             price: "10/hr"
@@ -38,7 +38,7 @@ export default function Services(){
                                     <ul>
                                         {lists.map(item => {
                                             return (
-                                                <li key ={lists.length}><MdDone /> {item}.</li>
+                                                <li key ={nanoid()}><MdDone /> {item}.</li>
                                             )
                                         })}
                                     </ul>

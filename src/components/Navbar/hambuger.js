@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css';
 import { Link } from 'react-router-dom';
-import sinon from 'sinon'
 export default function Hambuger() {
     const [active, setActive] = useState(false)
     function toggle() {
@@ -14,43 +13,34 @@ export default function Hambuger() {
                 <ul onClick={toggle} className={active ? "active" : ""}>
                     <Link to='/'>
                         <li
+                        id='#nav-link'
                             onClick={toggle} className={active ? "active" : ""}>
                             <a onClick={toggle} className={active ? "active" : ""} href="#home" >HOME</a>
                         </li>
                     </Link>
                     <Link to='/about'>
                         <li
-                            onClick={toggle}
-                            className={active ? "active" : ""}>
-                            <a onClick={toggle} className={active ? "active" : ""}>
-                                about
-                            </a>
+                        id='#nav-link'
+                            onClick={toggle} className={active ? "active" : ""}>
+                                <a onClick={toggle} className={active ? "active" : ""} href="#about">about</a>
                         </li>
                     </Link>
                     <Link to='/projects'>
                         <li
+                            id='#nav-link'
                             onClick={toggle} className={active ? "active" : ""}>
-                            <a onClick={toggle}
-                                className={active ? "active" : ""}>
-                                projects
-                            </a>
+                                <a onClick={toggle} className={active ? "active" : ""} href="#projects">projects</a>
                         </li>
                     </Link>
                     <Link to='/services'>
-                        <li onClick={toggle}
-                            className={active ? "active" : ""}>
-                            <a onClick={toggle} className={active ? "active" : ""}>
-                                service
-                            </a>
+                        <li onClick={toggle} className={active ? "active" : ""}>
+                            <a onClick={toggle} className={active ? "active" : ""} href="#services">service</a>
                         </li>
                     </Link>
                     <Link to='/contacts'>
                         <li
                             onClick={toggle} className={active ? "active" : ""}>
-                            <a onClick={toggle}
-                                className={active ? "active" : ""}>
-                                contacts
-                            </a>
+                                <a onClick={toggle} className={active ? "active" : ""} href="#contacts">contacts</a>
                         </li>
                     </Link>
                 </ul>
